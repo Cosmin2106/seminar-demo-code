@@ -1,4 +1,4 @@
-# Install script for directory: /home/cosmin/Desktop/Sem. 4/Seminar - C++/demos
+# Install script for directory: /home/cosmin/Desktop/Sem. 4/Seminar - C++/seminar-demo-code
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/cosmin/Desktop/Sem. 4/Seminar - C++/demos/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/cosmin/Desktop/Sem. 4/Seminar - C++/seminar-demo-code/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
