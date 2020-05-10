@@ -1,0 +1,3 @@
+/home/cosmin/Desktop/Sem. 4/Seminar - C++/demos/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/cosmin/Desktop/Sem. 4/Seminar - C++/demos/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/cosmin/Desktop/Sem. 4/Seminar - C++/demos/cmake-build-debug/CMakeFiles/demos.dir

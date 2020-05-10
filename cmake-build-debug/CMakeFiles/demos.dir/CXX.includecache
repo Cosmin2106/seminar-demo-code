@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cosmin/Desktop/Sem. 4/Seminar - C++/demos/examples/example1.cpp
+
+/home/cosmin/Desktop/Sem. 4/Seminar - C++/demos/examples/example2.inl
+
+/home/cosmin/Desktop/Sem. 4/Seminar - C++/demos/examples/signatures.h
+cstdarg
+-
+
+/home/cosmin/Desktop/Sem. 4/Seminar - C++/demos/main.cpp
+iostream
+-
+examples/signatures.h
+/home/cosmin/Desktop/Sem. 4/Seminar - C++/demos/examples/signatures.h
+examples/example1.cpp
+/home/cosmin/Desktop/Sem. 4/Seminar - C++/demos/examples/example1.cpp
+examples/example2.inl
+/home/cosmin/Desktop/Sem. 4/Seminar - C++/demos/examples/example2.inl
+
