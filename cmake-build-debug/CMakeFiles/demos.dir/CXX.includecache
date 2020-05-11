@@ -10,6 +10,8 @@
 
 /home/cosmin/Desktop/Sem. 4/Seminar - C++/seminar-demo-code/examples/example2.inl
 
+/home/cosmin/Desktop/Sem. 4/Seminar - C++/seminar-demo-code/examples/example3.inl
+
 /home/cosmin/Desktop/Sem. 4/Seminar - C++/seminar-demo-code/examples/signatures.h
 cstdarg
 -
@@ -23,4 +25,6 @@ examples/example1.cpp
 /home/cosmin/Desktop/Sem. 4/Seminar - C++/seminar-demo-code/examples/example1.cpp
 examples/example2.inl
 /home/cosmin/Desktop/Sem. 4/Seminar - C++/seminar-demo-code/examples/example2.inl
+examples/example3.inl
+/home/cosmin/Desktop/Sem. 4/Seminar - C++/seminar-demo-code/examples/example3.inl
 

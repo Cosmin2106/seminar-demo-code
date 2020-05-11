@@ -12,13 +12,13 @@
  * @param args - parameter pack. Unpacking it is done by adding ... after its name.
  */
 template<typename T, typename... Ts>
-int sum_templates(T arg1, Ts... args) {
+auto sum_templates(T arg1, Ts... args) {
     return arg1 + sum_templates(args...);
 }
 /**
  * Base Case - no elements.
  */
-int sum_templates() {
+auto sum_templates() {
     return 0;
 }
 
