@@ -2,7 +2,7 @@
 
 /**
  * C89 implementation using the <stdarg.h> library and "va_start", "va_arg", "va_end" macros.
- * Type unsafe, hard to follow, though nice concept.
+ * Type unsafe, hard to follow, though nice concept. Use in C++ NOT RECOMMENDED.
  * @param n_args - number of arguments included in ellipsis
  * @param ... - packed arguments
  */
