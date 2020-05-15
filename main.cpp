@@ -1,9 +1,13 @@
 #include <iostream>
+
 #include "examples/signatures.h"
 #include "examples/example1.cpp"
 #include "examples/example2.inl"
 #include "examples/example3.inl"
 #include "examples/example4.cpp"
+#include "examples/example5.inl"
+#include "examples/example6.cpp"
+
 
 int main() {
     // Example 1, slide: 3 (<stdarg.h>/<cstdarg> implementation, problems arise)
@@ -23,6 +27,18 @@ int main() {
     Master<A, B, C> m2{};
     m1.print_msg();
     m2.print_msg();
+    std::cout << '\n';
+
+
+    /* Bonus - Two neat tricks */
+
+    // Example 5 (modify std::is_same to accept an undetermined number of types)
+    auto a = 2; auto b = 6; auto c = 12.1; auto d = 21;
+    std::cout << "Are all types identical? " << (all_same<decltype(a), decltype(b), decltype(d)>::value ? "true" : "false") << '\n';
+    std::cout << "Are all types identical? " << (all_same<decltype(a), decltype(b), decltype(c), decltype(d)>::value ? "true" : "false") << "\n\n";
+
+    // Example 6 (simulate variadic templates in C++11, explained)
+    std::cout << "1 + 2 + 3.0 = " << c11_fold(1, 2, 3.0) << '\n';
 
     return 0;
 }

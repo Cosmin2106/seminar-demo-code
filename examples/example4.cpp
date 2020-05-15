@@ -1,6 +1,6 @@
 // ---------- Example 3 -------------
-// Observation: In this examples we use structs instead of classes, because structs have default public
-//              members and we are working with simple data structures. Classes would work identically.
+// Note: In this examples we use structs instead of classes, because structs have default public
+//       members and we are working with simple data structures. Classes would work identically.
 
 struct A {
     void print_msg() {

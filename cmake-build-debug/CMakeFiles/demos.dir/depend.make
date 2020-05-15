@@ -5,6 +5,8 @@ CMakeFiles/demos.dir/main.cpp.o: ../examples/example1.cpp
 CMakeFiles/demos.dir/main.cpp.o: ../examples/example2.inl
 CMakeFiles/demos.dir/main.cpp.o: ../examples/example3.inl
 CMakeFiles/demos.dir/main.cpp.o: ../examples/example4.cpp
+CMakeFiles/demos.dir/main.cpp.o: ../examples/example5.inl
+CMakeFiles/demos.dir/main.cpp.o: ../examples/example6.cpp
 CMakeFiles/demos.dir/main.cpp.o: ../examples/signatures.h
 CMakeFiles/demos.dir/main.cpp.o: ../main.cpp
 

@@ -1,7 +1,7 @@
 // ---------- Example 2 -------------
-// Observation: Templates are just patterns used to generate families of functions or classes.
-//              Because of this, their definition must not be found in another ".cpp". In this
-//              case, we are using an inline file (a header would work as well).
+// Note: Templates are just patterns used to generate families of functions or classes.
+//       Because of this, their definition must not be found in another ".cpp". In this
+//       case, we are using an inline file (a header would work as well).
 
 #ifndef DEMOS_EXAMPLE2_INL
 #define DEMOS_EXAMPLE2_INL
