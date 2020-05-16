@@ -1,8 +1,11 @@
-// ---------- Example 4 -------------
+// ---------- Example 5 -------------
 // Executes at compile time. No if-statements needed.
 
 #ifndef DEMOS_EXAMPLE4_INL
 #define DEMOS_EXAMPLE4_INL
+
+
+/* C++11 VERSION */
 
 /**
  * The most general case. Takes into account the first two types, performs an 'and'
@@ -10,8 +13,8 @@
  * For the specializations to work, the general case must be declared first.
  */
 template<typename T, typename U, typename... Vs>
-struct all_same {
-    static constexpr bool value = all_same<T, U>::value && all_same<U, Vs...>::value;
+struct all_same_c11 {
+    static constexpr bool value = all_same_c11<T, U>::value && all_same_c11<U, Vs...>::value;
 };
 
 /**
@@ -20,7 +23,7 @@ struct all_same {
  * the types differ. Return false.
  */
 template<typename T, typename U>
-struct all_same<T, U> {
+struct all_same_c11<T, U> {
     static constexpr bool value = std::false_type();
 };
 
@@ -30,8 +33,20 @@ struct all_same<T, U> {
  * Return true immediately.
  */
 template<typename T>
-struct all_same<T, T> {
+struct all_same_c11<T, T> {
     static constexpr bool value = std::true_type();
+};
+
+
+/* C++17 VERSION */
+
+/**
+ * Makes use of the two specializations from the C++11 version. Unpacked using fold expressions.
+ * At every step, a type contained in the pack is compared to the initial type T.
+ */
+template<typename T, typename... Vs>
+struct all_same_c17 {
+    static constexpr bool value = (all_same_c11<T, Vs>::value && ...);
 };
 
 #endif

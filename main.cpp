@@ -8,7 +8,6 @@
 #include "examples/example5.inl"
 #include "examples/example6.cpp"
 
-
 int main() {
     // Example 1, slide: 3 (<stdarg.h>/<cstdarg> implementation, problems arise)
     std::cout << "1 + 2 + 3 = " << sum_stdarg(3, 1, 2, 3) << '\n';
@@ -22,7 +21,7 @@ int main() {
     std::cout << "1 + 2 + 3 = " << sum_fold(1, 2, 3) << '\n';
     std::cout << "1 + 2 + 3.0 = " << sum_fold(1, 2, 3.0) << "\n\n";
 
-    // Example 4, slide *x* (fold expressions and classes, notice order of types)
+    // Example 4, slide 22 (fold expressions and classes, notice order of types)
     Master<C, A> m1{};
     Master<A, B, C> m2{};
     m1.print_msg();
@@ -34,8 +33,10 @@ int main() {
 
     // Example 5 (modify std::is_same to accept an undetermined number of types)
     auto a = 2; auto b = 6; auto c = 12.1; auto d = 21;
-    std::cout << "Are all types identical? " << (all_same<decltype(a), decltype(b), decltype(d)>::value ? "true" : "false") << '\n';
-    std::cout << "Are all types identical? " << (all_same<decltype(a), decltype(b), decltype(c), decltype(d)>::value ? "true" : "false") << "\n\n";
+    std::cout << "C++11, are all types identical? " << (all_same_c11<decltype(a), decltype(b), decltype(d)>::value ? "true" : "false") << '\n';
+    std::cout << "C++11, are all types identical? " << (all_same_c11<decltype(a), decltype(b), decltype(c), decltype(d)>::value ? "true" : "false") << "\n\n";
+    std::cout << "C++17, are all types identical? " << (all_same_c17<decltype(a), decltype(b), decltype(d)>::value ? "true" : "false") << '\n';
+    std::cout << "C++17, are all types identical? " << (all_same_c17<decltype(a), decltype(b), decltype(c), decltype(d)>::value ? "true" : "false") << "\n\n";
 
     // Example 6 (simulate variadic templates in C++11, explained)
     std::cout << "1 + 2 + 3.0 = " << c11_fold(1, 2, 3.0) << '\n';
