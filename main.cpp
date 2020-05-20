@@ -8,6 +8,7 @@
 #include "examples/example5.inl"
 #include "examples/example6.cpp"
 
+
 int main() {
     // Example 1, slide: 3 (<stdarg.h>/<cstdarg> implementation, problems arise)
     std::cout << "1 + 2 + 3 = " << sum_stdarg(3, 1, 2, 3) << '\n';
@@ -29,7 +30,7 @@ int main() {
     std::cout << '\n';
 
 
-    /* Bonus - Two neat tricks */
+    /* Bonus - Some neat tricks */
 
     // Example 5 (modify std::is_same to accept an undetermined number of types)
     auto a = 2; auto b = 6; auto c = 12.1; auto d = 21;
