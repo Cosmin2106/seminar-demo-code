@@ -1,4 +1,0 @@
-/home/cosmin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/201.7223.86/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/home/cosmin/Desktop/Sem. 4/Seminar - C++/seminar-demo-code"
--- Configuring done
--- Generating done
--- Build files have been written to: /home/cosmin/Desktop/Sem. 4/Seminar - C++/seminar-demo-code/cmake-build-debug
