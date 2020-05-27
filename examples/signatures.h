@@ -4,15 +4,15 @@
 #include <cstdarg>
 
 // Example 1
-auto sum_stdarg(int, ...);
+int sum_stdarg(int, ...);
 
 // Example 2
 template<typename T, typename... Ts>
-auto sum_templates(T, Ts...);
-auto sum_templates();
+int sum_templates(T, Ts...);
+int sum_templates();
 
 // Example 3
 template<typename... Ts>
-auto sum_fold(Ts...);
+int sum_fold(Ts...);
 
 #endif

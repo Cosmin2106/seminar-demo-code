@@ -6,7 +6,7 @@
  * @param n_args - number of arguments included in ellipsis
  * @param ... - packed arguments
  */
-auto sum_stdarg(int n_args, ...) {
+int sum_stdarg(int n_args, ...) {
     int s = 0;
     va_list ap;
     va_start(ap, n_args);

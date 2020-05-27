@@ -11,7 +11,7 @@
  *                        - expands to: ((arg1 + arg2) + arg3) + ...
  */
 template<typename... Ts>
-auto sum_fold(Ts... args) {
+int sum_fold(Ts... args) {
     return (... + args);
 }
 
